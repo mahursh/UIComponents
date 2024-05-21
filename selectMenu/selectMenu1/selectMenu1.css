@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#8460ed,#ff1252);
+}
+.select-menu{
+    width: 380px;
+    margin: 150px auto;
+}
+.select-menu .select-btn{
+    position: relative;
+    top: -140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+.select-btn .icon-arrow{
+    font-size: 25px;
+    transition: 1s;
+}
+.select-btn.active .icon-arrow{
+    transform: rotate(180deg);
+}
+.select-menu .list{
+    position: absolute;
+    width: 380px;
+    transform: translateY(-140px);
+    margin-top: 10px;
+}
+.list .option{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    padding: 0 16px;
+    cursor: pointer;
+    transform-origin: top;
+    opacity: 0;
+    transform: scale(0) translateY(-65px);
+    margin-bottom: -55px;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out,margin-bottom .5s ease-in-out;
+    transition-delay: calc(.1s * var(--i));
+}
+.select-btn.active~.list .option{
+    transition: opacity 1s ease-in-out,transform .5s ease-in-out,margin-bottom .2s ease-in-out;
+    transition-delay: calc(.1s * var(--i));
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    margin-bottom: 0;
+}
+.list .option:hover{
+    background: #f2f2f2;
+
+}
+.list .option:nth-child(1){
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.list .option:nth-child(5){
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.option .icon-arrow{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
