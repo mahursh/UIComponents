@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/multipleForm.css">
+
+    <!-- <Script defer src="js/multipleForm.js"></Script>    -->
+    <title>Multiple Step Form</title>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="" id="form1" class="form">
+            <h3>Registration Form</h3>
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Password">
+            <input type="text" placeholder="Confirm Password">
+
+            <div class="btn_box">
+                <button id="next1" type="button">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="form2"  class="form">
+            <h3>Personal Info</h3>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Phone Number">
+
+            <div class="btn_box">
+                <button id="back2" type="button">Back</button>
+                <button id="next2" type="button">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="form3"  class="form">
+            <h3>Social Links</h3>
+            <input type="text" placeholder="Facebook">
+            <input type="text" placeholder="Twitter">
+            <input type="text" placeholder="Github">
+
+            <div class="btn_box">
+                <button id="back3" type="button">Back</button>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="progress_container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+        </div>
+    </div>
+
+
+    <Script  src="js/multipleForm.js"></Script>
+</body>
+</html>

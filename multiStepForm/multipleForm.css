@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+
+:root{
+ --line-border-fill : #de3163;
+ --line-border-empty : #383838;
+ --dark-color : #1c2833;
+ --light-gray-color : #ddd;
+ --white-color : #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "poppins" , sans-serif;
+    background: radial-gradient(
+        circle ,
+        rgba(61,99,218,1) 0%  ,
+        rgba(214,84,207,1) 0%   ,
+        rgba(151 , 156 ,203 , 1) 100%
+    );
+}
+
+
+.container{
+    width: 400px;
+    height: 450px;
+    margin: 2rem auto;
+    background-color: var(--white-color);
+    overflow: hidden;
+    box-shadow: 0 10px 20px #2b2b2b;
+    border-radius: 5px;
+    position: relative;
+    
+    
+}
+h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    font-size: 2rem;
+}
+
+.container .form{
+    width: 340px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-family: inherit;
+    transition: 0.5s ease-in;
+   
+}
+
+.form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0 ;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 5px;
+    background: transparent;
+    font-family: inherit;
+   
+}
+
+.form input:focus {
+    outline: none;
+    border: 1px solid var(--dark-color);
+}
+
+.btn_box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: var(--line-border-fill);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: inherit;
+    border-radius:5px ;
+    color: var(--light-gray-color);
+    
+}
+.form button:active{
+    transform: scale(0.98);
+   
+}
+
+#form2 {
+    left: 450px;
+}
+
+#form3 {
+    left: 450px;
+}
+
+.progress_container{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.progress_container::before{
+    content: "" ;
+    background-color: var(--light-gray-color);
+    position: absolute;
+    top: 50% ;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: 1;
+}
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: 1;
+    transition: 0.4s ease-in;
+    
+}
+
+.circle{
+    background-color: var(--light-gray-color);
+    height:  30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.4s ease-in;
+   
+}
+
+.circle.active{
+    border-color: var(--line-border-empty);
+    color: var(--white-color);
+    background-color: var(--line-border-fill);
+}

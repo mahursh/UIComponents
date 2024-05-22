@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-container {
+    display: flex;
+  }
+  
+  .upload-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .file-list {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  
+  .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+ 
+  
+  .file-name {
+    margin-right: 10px;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+  }
+  
