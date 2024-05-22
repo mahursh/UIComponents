@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/popup2.css">
+
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,200" />
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="material-symbols-outlined popup-info" id="popup-info">
+                check_circle
+            </span>
+            
+            <span class="material-symbols-outlined popup-error" id="popup-error">
+                error
+            </span>
+
+            <div class="popup-message" id="popup-message">
+                <span class="text text-1 popup-title" id="popup-title"></span>
+                <span class="text text-2 popup-text" id="popup-text"></span>
+            </div>
+        </div>
+        <span class="material-symbols-outlined popup-close" id="popup-close">
+            close
+        </span>
+        <div class="popup-progress" id="popup-progress"></div>
+    </div>
+
+    <button onclick='showInfoPopup("200","here goes the response body ")'>Success</button>
+    <button onclick='showErrorPopup("500","here goes the response body ")'>Error</button>
+
+
+    <script src="js/popup2.js"></script>
+</body>
+</html>
